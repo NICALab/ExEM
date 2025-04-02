@@ -1,0 +1,8 @@
+total_image_EM.zarr/
+total_image_LM.zarr/
+results/
+precomputed/
+*.pyc
+*.pyo
+.vscode
+*.tmp
