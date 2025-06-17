@@ -1,6 +1,6 @@
-# VCM: Expansion microscopy enables virtual correlative super-resolution optical and electron microscopy
+# ExEM: Automated analysis of densely labeled expansion microscopy images using electron microscopy resources
 
-Understanding cellular mechanisms requires visualization at nanoscale of biomolecules and their structural context. While electron microscopy (EM) provides ultrastructural details, it lacks multiplexing capability and requires specialized expertise. Correlative light-electron microscopy addresses some limitations but struggles with registration and resolution misalignments. Here, we introduce Virtual Correlative super-resolution optical and electron Microscopy (VCM), an imaging pipeline that integrates 16× expansion microscopy (ExM) with deep-learning-based virtual EM generation. VCM fully leverages the potential of ExM to achieve high-resolution visualization of both biomolecules and ultrastructure with EM-level contrast, using only conventional fluorescence microscopy. Another key feature of VCM is its ability to generate virtual EM images compatible with existing EM resources, allowing direct application of tools such as pre-trained segmentation models. This significantly reduces the cost and effort for segmentation, accelerating deep-learning-based ultrastructural analysis. 
+Understanding cellular mechanisms requires nanoscale imaging that simultaneously captures molecular specificity and ultrastructural context. Expansion microscopy (ExM) with antibody and pan-protein staining offers a promising alternative to electron microscopy (EM). However, ExM images lack the sharp contrast and structural clarity of EM, complicating interpretation and limiting compatibility with the extensive computational ecosystem developed for EM-based analysis. Here, we introduce ExEM (Expansion-enabled virtual Electron Microscopy), a self-supervised learning–based framework that transforms ExM images into virtual EM images with enhanced contrast and clearly defined structural boundaries. By learning from EM data, ExEM facilitates intuitive interpretation and bridges the modality gap, allowing ExM datasets to be analyzed using pre-existing EM-trained segmentation models without manual annotation or model retraining. This approach enables automated, high-throughput analysis of densely labeled ExM volumes using EM-style tools and resources, thereby unlocking the full analytical potential of ExM across domains such as neuroscience, cell biology, and cancer research. 
 
 ## Overview
 
@@ -35,8 +35,8 @@ pip install torch numpy tqdm zarr torchio scikit-image tensorboard
 Clone this repository and navigate to the project directory:
 
 ```bash
-git clone https://github.com/NICALab/VCM.git
-cd VCM
+git clone https://github.com/NICALab/ExEM.git
+cd ExEM
 ```
 
 Ensure that your directory structure matches the one outlined above.
